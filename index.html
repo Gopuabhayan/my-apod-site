@@ -1,13 +1,47 @@
-<!doctype html>
+<!DOCTYPE html>
 <html lang="en">
-  <head>
-    <meta charset="UTF-8" />
-    <link rel="icon" type="image/svg+xml" href="/favicon.svg" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>my-apod-site</title>
-  </head>
-  <body>
-    <div id="app"></div>
-    <script type="module" src="/src/main.js"></script>
-  </body>
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>my APOD site</title>
+  
+  <link 
+    rel="stylesheet" 
+    href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css" />
+  
+  <link rel="stylesheet" href="/src/style.css" />
+</head>
+<body>
+  <div id="background" class="background"></div>
+  
+  <a
+    class="apod-button"
+    href="https://apod.nasa.gov/apod/astropix.html"
+    target="_blank"
+    rel="noopener noreferrer"
+    title="view info about the background"
+  >
+    <i class="fa-solid fa-circle-info"></i>
+  </a>
+
+  <main id="app">
+    <section class="hero clock-section">
+      <h1 id="clock">00:00</h1>
+      <p id="date">Tuesday, July 14</p>
+    </section>
+
+    <div class="hero-spacer"></div>
+
+    <section class="news-section">
+      <div class="news-header">
+        <h2>Today's News</h2>
+        <p>Top headlines from around the world & space.</p>
+      </div>
+
+      <div id="news-container" class="news-grid"></div>
+    </section>
+  </main>
+
+  <script type="module" src="/src/main.js"></script>
+</body>
 </html>
