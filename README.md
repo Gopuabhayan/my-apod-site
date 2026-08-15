@@ -18,3 +18,7 @@ get rid of your boring, lifeless and default apod-site. this is a functional apo
 - HTML
 - CSS
 - JavaScript
+
+## API used
+1. [apod from nasa](https://apod.nasa.gov/apod/astropix.html)
+2. [gnews api](https://gnews.io/)
