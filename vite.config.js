@@ -1,4 +1,7 @@
-export default defineConfig({
-  base: '/',
-  plugins: [react()],
-})
+export default defineConfig(() => {
+  return {
+    define: {
+      __APP_ENV__: process.env.VITE_API_KEYZ,
+    },
+  };
+});
